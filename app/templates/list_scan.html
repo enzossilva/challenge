@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de SCANs</title>
+</head>
+
+<body>
+    <h1>Lista de SCANs realizados.</h1>
+    <ul>
+        <li>Scan Alert: {{ list_scans
+            }}</li>
+    </ul>
+    <a href="{{ url_for('index_route') }}">Adicionar Novo SCAN</a>
+</body>
+
+</html>
