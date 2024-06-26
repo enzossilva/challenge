@@ -20,9 +20,9 @@ user-agent: Mozilla/5.0 (Windows NT 10.0; rv:125.0) Gecko/20100101 Firefox/125.0
 pragma: no-cache <br>
 cache-control: no-cache
 
-### Change for the url that you would like Scan.
+### Change the method HTTP and the url that you would like Scan.
 
-GET http://www.yourURL.com HTTP/1.1 <br>
+HEAD http://www.yourURL.com HTTP/1.1 <br>
 host: "www.yourURL.com" <br>
 user-agent: Mozilla/5.0 (Windows NT 10.0; rv:125.0) Gecko/20100101 Firefox/125.0 <br>
 pragma: no-cache <br>
@@ -46,17 +46,17 @@ cache-control: no-cache <br>
 
 #### Windows
 
-#### > py -3 -m venv .venv
+` py -3 -m venv .venv`
 
 ### Activate the environment
 
 #### macOS/Linux
 
-#### $ . .venv/bin/activate
+` ./venv/bin/activate`
 
 #### Windows
 
-#### > .venv\Scripts\activate
+`  ./venv/Scripts/activate`
 
 ##### With Environment activate we need install the library to start the project.
 
@@ -64,7 +64,7 @@ cache-control: no-cache <br>
 
 ### Install Flask
 
-#### $ pip install Flask
+` pip install Flask`
 
 #### from Flask lets call "request" and "url_for"
 
@@ -96,7 +96,13 @@ cache-control: no-cache <br>
 
 #### In the terminal execute:
 
-#### $ python3 run.py
+` python3 run.py`
+
+### Open with Docker Compose
+
+#### in the terminal execute:
+
+`docker-compose up`
 
 #### Now the application must be online and running on http://127.0.0.1:5000
 
@@ -108,4 +114,4 @@ cache-control: no-cache <br>
 
 #### After you put the url in input, click in SEND to realize Active Scan.
 
-#### Now you can see what alerts there are and what types of vulnerabilities they are. If you don't get any feedback, that site doesn't have vulnerabilities. This is possible to see in ZAP with more precision in Alerts.
+#### Now you can see what alerts there are and what types of vulnerabilities they are. If you don't get any feedback, that site doesn't have vulnerabilities. This is possible to see what

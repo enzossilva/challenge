@@ -1,4 +1,4 @@
-from flask import request, redirect, url_for
+from flask import request, redirect, url_for, jsonify
 from app.models import start_scan_models, get_scan_results
 from app.view import render_index, render_list_scan
 
@@ -16,5 +16,5 @@ def start_scan_controller():
 def list_scan_controller(target_url):
     target_url = f'https://{target_url}'
     results = get_scan_results(target_url)
-    return render_list_scan(results)
+    return jsonify(results)
 

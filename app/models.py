@@ -35,7 +35,7 @@ def get_scan_status():
 def get_scan_results(target_url):
     results_url = f"{zap_url}/JSON/core/view/alerts/?baseurl={target_url}&apikey={api_key}"
     response = requests.get(results_url)
-    return response.content
+    return response.json()
 
 
 if __name__ == "__main__":
